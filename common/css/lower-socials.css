@@ -1,0 +1,113 @@
+:root{
+    /*Lower Third*/
+    --white: #fff;
+	--main-background-color: #DDD;
+
+    /*Socials Colors*/
+    --youtube-background-icon: #c4302b;
+    --youtube-background-letters: #9d2622;
+
+    --facebook-background-icon: #3b5998;
+    --facebook-background-letters: #2f477a;
+
+    --instagram-background-icon: linear-gradient(45deg, rgba(114,0,134,1) 0%, rgba(255,250,65,1) 100%);
+    --instagram-background-letters: rgb(105,34,117);
+}
+
+
+#box-youtube{
+    transition: left .5s ease;
+}
+
+#box-facebook{
+    transition: left .8s ease;
+}
+
+#box-instagram{
+    transition: left 1.2s ease;
+}
+
+
+.lower-socials{
+    position: absolute;
+    left: -500px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.lower-socials.show{
+    left: 45px;
+}
+
+.lower-socials .left-box{
+    background: var(--main-background-color);
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.lower-socials .right-box{
+    background: var(--main-background-color);
+    height: 3em;
+    border-radius: 2em;
+    margin-left: -45px;
+    padding: .5em 3em .5em 4.5em;
+    z-index: 1;
+}
+
+.lower-socials .right-box .text-1{
+    font-size: .9em;
+}
+
+.lower-socials .right-box .text-2{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.youtube{
+    top: 0;
+}
+
+.youtube .left-box{
+    background: var(--youtube-background-icon);
+    color: var(--white);
+}
+
+.youtube .right-box{
+    background: var(--youtube-background-letters);
+    color: var(--white);
+}
+
+.facebook{
+    top: 5em;
+}
+
+.facebook .left-box{
+    background: var(--facebook-background-icon);
+    color: var(--white);
+}
+
+.facebook .right-box{
+    background: var(--facebook-background-letters);
+    color: var(--white);
+}
+
+.instagram{
+    top: 10em;
+}
+
+.instagram .left-box{
+    background: var(--instagram-background-icon);
+    color: var(--white);
+}
+
+.instagram .right-box{
+    background: var(--instagram-background-letters);
+    color: var(--white);
+}
